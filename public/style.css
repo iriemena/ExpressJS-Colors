@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: tahoma;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+}
+h2 {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  width: 95%;
+  padding: 10px;
+  text-align: center;
+}
+button {
+  padding: 5px;
+  width: 10%;
+  font-size: 16px;
+}
+.bar {
+  width: 15%;
+  position: fixed;
+  right: 10px;
+  display: none;
+}
+.nav-center {
+  background-color: #ddd;
+  display: flex;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+.nav-center h1 {
+  color: #62a515;
+}
+#btn{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #64e
+}
+
+.nav-link {
+  list-style: none;
+  width: 80%;
+}
+li a {
+  float: right;
+  text-decoration: none;
+  padding: 10px;
+  color: #668ae7;
+}
+a:hover {
+  color: #661aa9;
+}
+.foot {
+  color: rgb(85, 116, 116);
+  background-color: #cac;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+  animation: foot 5s ease-in-out infinite;
+}
+h1 {
+  font-size: 2.3rem;
+  width: 100%;
+}
+h1 span {
+  color: rgb(61, 26, 136);
+}
+@keyframes foot {
+  20% {
+    color: #72b;
+  }
+  40% {
+    color: #c961aa;
+  }
+  50% {
+    color: rgb(7, 221, 140);
+  }
+  70% {
+    color: #792821;
+  }
+  85% {
+    color: #528f93;
+  }
+  98% {
+    color: rgb(12, 3, 255);
+  }
+}
+body {
+  transition: background 1s ease;
+}
+
+@media screen and (max-width: 320px), (max-width: 480px) {
+  .nav-link {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    width: 100%;
+    background-color: #ddd;
+    height: 120px;
+    margin-bottom: 0;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    margin-top: 15px;
+  }
+  .foot {
+    font-size: 0.85rem;
+  }
+  .show {
+    visibility: visible;
+  }
+  .nav-link li {
+    border: 1px solid #ccc;
+  }
+  .nav-link li:hover {
+    color: rgb(106, 43, 57);
+  }
+  button {
+    width: 30%;
+  }
+  .bar {
+    width: 15%;
+    height: 7%;
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  button {
+    width: 20%;
+  }
+  .nav-link li {
+    font-size: 0.95rem;
+  }
+}
